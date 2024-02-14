@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;
 }
+
 .cabecalho{
-    background-color: #231a5b;
-    color: white;
+    background-color: #231773;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 2em;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .cabecalho-logo{
     width: 5%;
@@ -19,4 +22,79 @@
     display: inline-block;
     margin-right: 2em;
     font-size: 1.5em;
+    color: #A63251;
+}
+.escola{
+    background-image: #F2F2F2;
+    color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+}
+.escola-texto{
+    width: 45%;
+    font-family: "Judson", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+}
+.escola-titulo{
+    padding: 24px 0;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+.escola-imagem{
+    width: 25%;
+}
+
+.estudante{
+    background-image: linear-gradient(#231773, #F2F2EB);
+}
+.estudante-titulo{
+    text-align: center;
+    padding: 50px 0;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #A63251;
+    font-size: 2em;
+}
+.estudante-todos{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.estudante-div{
+    text-align: center;
+}
+.estudante-imagem{
+    width: 80%;
+    border-radius: 5%;
+}
+.estudante-nome{
+    margin: 8px 0;
+    font-family: "Judson", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+}
+.estudante-icone{
+    width: 24px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+
+.rodape{
+    background-color: #231773;
+    text-align: center;
+}
+.rodape-logo{
+    width: 5%;
+    border-radius: 100%;
+    margin: 1em;
+    padding: 12px 0;
+    
 }
