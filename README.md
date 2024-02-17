@@ -1,4 +1,4 @@
-# 2024-1ano-site-exemplo
+# 2024-2ano-site-exemplo
 
 ## Atividade da disciplina de Matemática II -  Programação I
 
