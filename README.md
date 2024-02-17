@@ -10,3 +10,7 @@
 - Foto que representa sua escola;
 - Texto sobre a escola;
   
+#### Atividades extra:
+- Colocar uma imagem de todos os colegas da turma;
+- Fazer um arquivo HTML a mais, descrever a sua história;
+- Linkar a história de cada estudante ao seu site.
