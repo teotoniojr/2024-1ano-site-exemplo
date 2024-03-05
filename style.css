@@ -1,103 +1,84 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono&family=Playfair+Display&display=swap');
+
+
+:root{
+    --verde-escuro: #12372A;
+    --verde: #436850;
+    --verde-claro: #ADBC9F;
+    --pastel: #FBFADA;
+    --preto: #000000;
+    --font-titulo:"Kode Mono", monospace;
+    --font-texto: "Playfair Display", serif;
+
 }
 
-.cabecalho{
-    background-color: #231773;
-    display: flex;
+body{
+    background-color: var(--verde-escuro);
+    color: var(--pastel);
+    font-family: var(--font-texto);
+}
+
+.conteudo-principal{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 2em;
-    font-family: "Protest Riot", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
-.cabecalho-logo{
-    width: 5%;
-    border-radius: 100%;
-    margin: 1em;
+
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 36px;
 }
-.cabecalho-lista-item{
-    display: inline-block;
-    margin-right: 2em;
-    font-size: 1.5em;
-    color: #A63251;
+
+
+.titulo-principal span{
+    color: var(--verde-claro);
 }
-.escola{
-    background-image: #F2F2F2;
-    color: #0D0D0D;
+
+.botao{
+    font-family: var(--font-texto);
+    font-size: 18px;
+    background-color: var(--verde-claro);
+    color: var(--preto);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px 0;
+    padding: 1em;
+    width: 100%;
+    border-bottom: 4px solid var(--verde);
+    border-left: 4px solid var(--verde);
+    border-right: 4px solid var(--verde);
+    border-top: none;
 }
-.escola-texto{
-    width: 45%;
-    font-family: "Judson", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.3em;
-}
-.escola-titulo{
-    padding: 24px 0;
-    font-family: "Protest Riot", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2em;
-}
-.escola-texto-um{
-    padding-bottom: 24px;
-}
-.escola-imagem{
-    width: 25%;
+.botoes {
+    display: block;
 }
 
-.estudante{
-    background-image: linear-gradient(#231773, #F2F2EB);
-}
-.estudante-titulo{
-    text-align: center;
-    padding: 50px 0;
-    font-family: "Protest Riot", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #A63251;
-    font-size: 2em;
-}
-.estudante-todos{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-}
-.estudante-div{
-    text-align: center;
-}
-.estudante-imagem{
-    width: 80%;
-    border-radius: 5%;
-}
-.estudante-nome{
-    margin: 8px 0;
-    font-family: "Judson", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.3em;
-}
-.estudante-icone{
-    width: 24px;
-    margin-right: 8px;
-    margin-bottom: 8px;
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
 }
 
-
-.rodape{
-    background-color: #231773;
-    text-align: center;
+.botao:last-child{
+    border-radius: 0 0 40px 40px;
 }
-.rodape-logo{
-    width: 5%;
-    border-radius: 100%;
-    margin: 1em;
-    padding: 12px 0;
-    
+
+.ativo{
+    background-color: var(--verde);
+    border-bottom: 4px solid var(--preto);
+}
+
+@media screen and (min-width: 768px) {
+    .botoes{
+        display: flex;
+    } 
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0; 
+    }
 }
